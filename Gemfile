@@ -9,3 +9,7 @@ group :test do
   gem 'rack-test'
   gem 'minitest-reporters'
 end
+
+group :development do
+  gem 'rubocop'
+end

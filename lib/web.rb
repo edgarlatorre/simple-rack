@@ -4,10 +4,8 @@ class Web
     case request.path
     when '/working'
       Rack::Response.new('Working')
-    when '/hello'
-      Rack::Response.new('Hello World')
     else
-      Rack::Response.new('Not Fount', 404)
+      Rack::Response.new('Not Found', 404)
     end
   end
 end

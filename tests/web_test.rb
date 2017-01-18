@@ -12,4 +12,9 @@ class AppTest < Minitest::Test
     get '/working'
     assert last_response.ok?
   end
+
+  def test_not_found_page
+    get '/invalid-page'
+    assert last_response.status == 404
+  end
 end
